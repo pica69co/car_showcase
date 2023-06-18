@@ -77,7 +77,7 @@ const CardDetails = ({ isOpen, closeModal, car }: CardDetailsProps) => {
                       {Object.entries(car).map(([key, value]) => (
                         <div className="flex justify-between gap-5 w-full text-right" key={key}>
                           <h4 className="text-gray capitalize">{key.split('_').join(' ')}</h4>
-                          <p>{value}</p>
+                          <p>{value === 'a' ? 'Automatic' : value}</p>
                         </div>
                       ) )}
                     </div>

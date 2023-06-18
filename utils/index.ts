@@ -7,8 +7,10 @@ export async function fetchCars(filters: FilterProps) {
   const { manufacturer, year, model, limit, fuel } = filters
   
   const headers = {
-    //credentials
-    
+    //*credentials
+    //'X-RapidAPI-Key': 
+    //'X-RapidAPI-Host':
+
     }
     const response = await fetch(url+manufacturer+'&year='+year+'&model='+model
        +'&limit='+limit+'&fuel_type='+fuel, {headers: headers,})
